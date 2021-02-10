@@ -93,6 +93,3 @@ aside ul li:first-child {
 section ol li:last-child {
     font-weight: bold;
 }
-
-/* formula */
-dl ul li:nth-child()
