@@ -1,0 +1,103 @@
+body {
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+}
+
+header {
+    background-color: peru;
+}
+
+h1 {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+p {
+    background-color: lightblue;
+}
+
+nav ul {
+    list-style: square;
+}
+
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* class name */
+.orange-link {
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+/* id */
+#treatofweek {
+    background-color: orange;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+/* child */
+article>p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-style: italic;
+}
+
+/* adjacent */
+h3+ul {
+    border: 1px solid black;
+}
+
+a[href] {
+    color: blue;
+}
+
+[title*=Executive] {
+    background-color: yellow;
+}
+
+/* pseudo */
+
+/* LoVe HAte */
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: orange;
+    /* horizontal vertical blur */
+    box-shadow: 1px 1px 4px 2px;
+}
+
+nav ul a:active {
+    box-shadow: 0px 0px 4px 2px;
+}
+
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
