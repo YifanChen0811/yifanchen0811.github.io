@@ -32,7 +32,7 @@
         <article>
             <h2>Life of a Starfish</h2>
             <!-- adding image -->
-        <img src="images/lone-starfish.jpg" alt="image" class="img1">
+            <img src="images/lone-starfish.jpg" alt="image" class="img1">
             <p>
                 Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                 catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish
@@ -54,25 +54,60 @@
             <p>
                 <ul>
                     <li>
-                        Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+                        Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.
                     </li>
                     <li>
                         Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
                     </li>
                     <li>
-                        Herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+                        Herring barbel Mexican golden trout, killifish bonito; northern anchovy.
                     </li>
                     <li>
                         Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
                     </li>
                 </ul>
             </p>
+            <!-- Contact Form-->
             <section>
                 <h2>Contact to learn more</h2>
-                
+                <form action="thankyou.html" method="post">
+                    <div>
+                        <label for="Name">Your Name</label>
+                        <br>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Email">Your Email</label>
+                        <br>
+                        <input type="email" name="Email" id="Email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Message">Your Message</label>
+                        <br>
+                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <h3>Would you like to visit the starfish?</h3>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" name="Visit" id="Yes">
+                        <label for="No">No</label>
+                        <input type="radio" name="Visit" id="No">
+                        <label for="Maybe">Maybe</label>
+                        <input type="radio" name="Visit" id="Maybe">
+                    </div>
+                    <br>
+                    <button>Send</button>
+                </form>
             </section>
         </article>
     </main>
+
     <!-- footer -->
     <footer>&copy;Lone Starfish</footer>
 </body>
