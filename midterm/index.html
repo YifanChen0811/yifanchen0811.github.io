@@ -18,21 +18,25 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="story.html">Story</a>
+                    <a href="#main" id="s">Story</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- main content -->
-    <main>
+    <main id="main">
         <!-- main article -->
         <article>
             <h2>Life of a Starfish</h2>
             <!-- adding image -->
-            <img src="images/lone-starfish.jpg" alt="image" class="img1">
+            <!-- adding scroll -->
+            <div class="img1""><img src="images/lone-starfish.jpg" alt="image">
+            <p>Starfish</p>
+            </div>
+            <!-- main intro -->
             <p>
                 Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
                 catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish
@@ -50,6 +54,7 @@
                 humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin
                 false trevally, dottyback.
             </p>
+            <!-- list -->
             <h2>Facts About Starfish</h2>
             <p>
                 <ul>
@@ -68,7 +73,7 @@
                 </ul>
             </p>
             <!-- Contact Form-->
-            <section>
+            <section id="contact">
                 <h2>Contact to learn more</h2>
                 <form action="thankyou.html" method="post">
                     <div>
@@ -102,14 +107,16 @@
                         <input type="radio" name="Visit" id="Maybe">
                     </div>
                     <br>
-                    <button>Send</button>
+                    <button type="submit">
+                        <a href="thankyou.html">SEND</a>
+                    </button>
                 </form>
             </section>
         </article>
     </main>
 
     <!-- footer -->
-    <footer>&copy;Lone Starfish</footer>
+    <footer>&copy; Lone Starfish. </footer>
 </body>
 
 </html>
