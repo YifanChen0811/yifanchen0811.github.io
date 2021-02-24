@@ -32,7 +32,7 @@
         <article>
             <h2>Life of a Starfish</h2>
             <!-- adding image -->
-            <!-- adding scroll -->
+            <!-- adding overflow -->
             <div class="img1"><img src="images/lone-starfish.jpg" alt="image">
                 <p>Starfish</p>
             </div>
@@ -54,7 +54,7 @@
                 humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin
                 false trevally, dottyback.
             </p>
-            <!-- list -->
+            <!-- fact list -->
             <h2>Facts About Starfish</h2>
             <ul>
                 <li>
@@ -74,37 +74,42 @@
             <section id="contact">
                 <h2>Contact to learn more</h2>
                 <form action="thankyou.html" method="post">
+                    <!-- name -->
                     <div>
-                        <label for="Name">Your Name</label>
+                        <label for="Name" >Your Name</label>
                         <br>
-                        <input type="text" name="Name" id="Name">
+                        <input type="text" name="Name" id="Name" placeholder="Full Name Please" required>
                     </div>
                     <br>
+                    <!-- email -->
                     <div>
                         <label for="Email">Your Email</label>
                         <br>
-                        <input type="email" name="Email" id="Email">
+                        <input type="email" name="Email" id="Email" required>
                     </div>
                     <br>
+                    <!-- type in area-->
                     <div>
                         <label for="Message">Your Message</label>
                         <br>
-                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Any comment is precious to us! "></textarea>
                     </div>
                     <br>
+                    <!-- options -->
                     <div>
                         <h3>Would you like to visit the starfish?</h3>
                     </div>
                     <br>
                     <div>
                         <label for="Yes">Yes</label>
-                        <input type="radio" name="Visit" id="Yes">
+                        <input type="radio" name="Visit" id="Yes" checked>
                         <label for="No">No</label>
                         <input type="radio" name="Visit" id="No">
                         <label for="Maybe">Maybe</label>
                         <input type="radio" name="Visit" id="Maybe">
                     </div>
                     <br>
+                    <!-- send button -->
                         <a href="thankyou.html" id="send">SEND</a>
                 </form>
             </section>
@@ -116,3 +121,5 @@
 </body>
 
 </html>
+<!-- Done! -->
+<!-- Thank you for checking the codes! -->

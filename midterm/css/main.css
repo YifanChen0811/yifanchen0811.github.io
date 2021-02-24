@@ -15,7 +15,7 @@ body {
 
 }
 
-
+/* main header */
 h1 {
     margin-top: -20px;
     padding-top: 10rem;
@@ -54,7 +54,7 @@ nav ul :hover {
     text-decoration: underline;
 }
 
-
+/* make the split line between options #s is id of study */
 #s {
     border-left: black solid 1px;
     padding-left: 10%;
@@ -82,7 +82,7 @@ img {
     margin-bottom: 10px;
 }
 
-/* scroll */
+/*overflow with position */
 
 .img1 {
     position: relative;
@@ -110,6 +110,7 @@ h2 {
     clear: both;
 }
 
+/* adjust position of facts */
 main ul {
     padding: 0;
     position: relative;
@@ -160,7 +161,7 @@ footer {
 }
 
 
-/* thankyou */
+/* thankyou page */
 #thankyou {
     position: relative;
     left: 36%;
@@ -176,3 +177,6 @@ footer {
 #thankyou:hover {
     text-decoration: underline;
 }
+
+/* Done! */
+/* Thank you for checking the codes! */
