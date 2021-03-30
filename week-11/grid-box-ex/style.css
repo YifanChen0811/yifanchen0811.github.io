@@ -1,0 +1,35 @@
+.container div {
+    padding: 1rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container div:nth-child(1) {
+    background-color: #0B3954;
+}
+
+.container div:nth-child(2) {
+    background-color: #087E8B;
+}
+
+.container div:nth-child(3) {
+    background-color: #BFD7EA;
+}
+
+.container div:nth-child(4) {
+    background-color: #FF5A5F;
+}
+
+
+/* ------------------------------------------------- */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
