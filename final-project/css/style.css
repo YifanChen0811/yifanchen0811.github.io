@@ -139,6 +139,8 @@ table {
 body {
     max-width: 1200px;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* navigation */
@@ -319,7 +321,7 @@ nav form button i {
     padding-bottom: 5em;
 }
 
-.vision h2 {
+.vision div h2 {
     font-size: 250%;
     font-weight: bold;
     padding-bottom: 0.5em;
@@ -327,12 +329,12 @@ nav form button i {
     line-height: 130%;
 }
 
-.vision p {
+.vision div p {
     line-height: 130%;
     padding-bottom: 4em;
 }
 
-.vision a {
+.vision div a {
     background-color: #222;
     color: white;
     padding: 1em;
@@ -379,17 +381,13 @@ nav form button i {
     line-height: 130%;
 }
 
-.JohnDoe {
+.doe,
+.bob {
     background-color: #ffe6ac;
     padding: 1em;
     margin-bottom: 1em;
 }
 
-.BobRite {
-    background-color: #ffe6ac;
-    padding: 1em;
-    margin-bottom: 1em;
-}
 
 /* Contact Us */
 .contact {
@@ -483,6 +481,7 @@ nav form button i {
 
 /* footer */
 footer {
+    margin: 0;
     background-color: #222;
     color: #C78C06;
     padding: 1em;
@@ -492,4 +491,229 @@ footer {
 footer a {
     text-decoration: underline;
     color: #C78C06;
+}
+
+
+
+/* ----------Media Query----------- */
+@media screen and (min-width: 760px) {
+
+    /* nav */
+    nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    nav ul li .logo {
+        padding: 0px;
+        margin-right: 3em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    nav ul li {
+        width: 60%;
+        justify-content: center;
+    }
+
+    nav ul li form input {
+        width: 70%;
+    }
+
+    /* welcome */
+    .welcome-text {
+        max-width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* about */
+    .about {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .about img {
+        max-width: 50%;
+        float: left;
+        padding-right: 1em;
+    }
+
+    .about h2 {
+        padding-top: 0px;
+        padding-bottom: 1rem;
+    }
+
+    /* service */
+    .service {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .service div h3 {
+        font-size: 200%;
+    }
+
+    .service div {
+        padding-bottom: 2em;
+    }
+
+    .service div p {
+        padding-bottom: 3em;
+        margin-bottom: 0px;
+
+    }
+
+    /* button */
+    .service .m .btn-service,
+    .service .dt .btn-service {
+        max-width: 3fr;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .service .vp .btn-service,
+    .service .wd .btn-service,
+    .service .p .btn-service {
+        position: relative;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    /* service-grid */
+    .service {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header"
+            "a a a b b b"
+            "c c d d e e";
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 100px 1fr 0.7fr;
+        column-gap: 1rem;
+    }
+
+    .service h2 {
+        grid-area: header;
+    }
+
+    .dt {
+        grid-area: a;
+    }
+
+    .m {
+        grid-area: b;
+    }
+
+    .vp {
+        grid-area: c;
+    }
+
+    .wd {
+        grid-area: d;
+    }
+
+    .p {
+        grid-area: e;
+    }
+
+    /* vision */
+    .vision {
+        background-position: center;
+        background-size: cover;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    /* team */
+    .team {
+        margin-left: 6%;
+        margin-right: 6%;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "a b"
+            "c d";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 1fr 1fr;
+        row-gap: 1em;
+        column-gap: 1em;
+    }
+
+
+    .team h2 {
+        grid-area: header;
+    }
+
+    .john {
+        grid-area: a;
+    }
+
+    .doe {
+        grid-area: b;
+        margin: 0;
+    }
+
+    .bob {
+        grid-area: c;
+        margin: 0;
+    }
+
+    .rite {
+        grid-area: d;
+    }
+
+    /* contact */
+    .contact {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .contactdiv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* message */
+    .contactdiv .message {
+        flex-basis: 60%;
+    }
+
+    .contactdiv form input {
+        border: #222 1px solid;
+        width: 90%;
+        height: 2rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .contactdiv form textarea {
+        border: #222 1px solid;
+        width: 90%;
+        height: 6rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* Location */
+    .contactdiv .location {
+        order: 1;
+        flex-basis: 40%;
+    }
+
+    /* table */
+    .contactdiv .operation {
+        order: 2;
+        flex-basis: 100%;
+    }
+
+    footer {
+        padding-left: 10%;
+    }
+
 }
