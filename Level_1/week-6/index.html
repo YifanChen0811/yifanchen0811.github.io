@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reggie's Coffee Shop - Home</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- This is a HTML comment -->
+  <!-- command + / adding and removing a comment  -->
+  <!-- tagname + Tab to autocomplete -->
+  <!-- command + right arrow key to jump to end of line -->
+  <!-- alt + up or down arrow keys to move a line of code -->
+  <!-- alt + z for wrapping text to next line  -->
+  <!-- alt + command + down arrow key, for multiple edit points. Escape to get rid of them. -->
+  <!-- tagname*number to get multiple tags. li*5 will give us 5 list items -->
+  <!-- command + A - Select Every thing -->
+  <!-- command + C - Copy -->
+  <!-- command + V - Paste -->
+
+  <!-- inline styles using the style attribute - NOT RECOMMENDED -->
+  <header style="background-color:peru;">
+    <h1>Reggie's Coffee Shop</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="#treatofweek">Treat of the Week</a>
+  </header>
+  <!-- main content of the page -->
+  <main>
+    <!-- 
+      Using pre and code tags
+    <pre>
+      <code>
+        &lt;p&gt;
+          &lt;strong&gt;
+            Hello!
+          &lt;/strong&gt;
+        &lt;/p&gt;
+      </code>
+    </pre>
+    <code>src</code> is an attribute for <code>img</code>img tag 
+    -->
+    <!-- adding an on page link -->
+    <a href="#treatofweek" class="orange-link">Treat of the Week</a>
+    <!-- main article -->
+    <article>
+      <h2>Our Story</h2>
+      <!-- Adding image -->
+      <img src="images/coffee-shop.jpg" alt="coffee cup on top of pile of coffee beans">
+      <blockquote class="large-text">
+        We love coffee <cite>- Reggie and Maria</cite>
+      </blockquote>
+      <p>
+        We are <em>Family owned business</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head barista of the shop.<br>
+        Maria is the pastry chef and is in-charge of the bake shop. Celebrating their 10<sup>th</sup> anniversary together in December 2021.
+      </p>
+      <hr>
+      <!-- *********about section of the article******** -->
+      <section>
+        <h3>About Us</h3>
+        <p>
+          We are a local coffee shop based in Ottawa. Our specialty is <b>organic fair-trade</b> coffee.
+        </p>
+      </section>
+    </article>
+    <!-- ************Sidebar information************** -->
+    <aside>
+      <h3>Merchandise</h3>
+      <ul>
+        <li>T-Shirts</li>
+        <li>Hats</li>
+        <li>Hoodies</li>
+      </ul>
+    </aside>
+    <!-- *********Events section************* -->
+    <section>
+      <h3>Events</h3>
+      <ol>
+        <li>Feb 23<sup>rd</sup> &hyphen; Coffee for Hope Foundation</li>
+        <li>Mar 17<sup>th</sup> &hyphen; Live Music</li>
+      </ol>
+    </section>
+    <!-- ********Treat of the Week section******** -->
+    <section id="treatofweek">
+      <h3>Treat of the Week</h3>
+      <dl>
+        <dt>Name</dt>
+        <dd>Banana Bread</dd>
+        <dt>Calories</dt>
+        <dd>250</dd>
+        <dt>Ingredients</dt>
+        <dd>
+          <ul>
+            <li>all purpose flour</li>
+            <li>baking soda</li>
+            <li>baking powder</li>
+            <li>salt</li>
+            <li>butter</li>
+            <li>sugar</li>
+            <li>eggs</li>
+            <li>bananas</li>
+            <li>lemon juice</li>
+          </ul>
+        </dd>
+      </dl>
+      <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank" class="orange-link large-text">Get the Recipe</a>
+    </section>
+    <!-- Adding section for menu -->
+    <section>
+      <h3>Menu Specials</h3>
+      <table border>
+        <thead>
+          <tr>
+            <th colspan="2">Items</th>
+            <th rowspan="2">Price</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>Calories</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Banana Bread</td>
+            <td>250</td>
+            <td>&dollar; 6</td>
+          </tr>
+          <tr>
+            <td>Oatmeal</td>
+            <td>110</td>
+            <td>&dollar; 8</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+  <!-- *********footer of the page********* -->
+  <footer class="site-footer">
+    <p>Copyright &copy; Reggie&apos;s Coffee Shop, 2021</p>
+  </footer>
+</body>
+
+</html>

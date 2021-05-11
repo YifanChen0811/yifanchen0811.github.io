@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------CSS RESET -----------------*/
+
+/* Custom CSS */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+h1,h2,h3{
+    font-weight:  bold;
+    /* top left-right bottm */
+    margin: 1em 0 0.5em;
+}
+
+h1{
+    font-size: 5.063rem;
+}
+h2{
+    font-size: 3.375rem;
+}
+h3 {
+    font-size: 2.25rem;
+}
+p{
+    margin: 1rem 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.container{
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.desktop-logo{
+    display: none;
+}
+
+.mobile-logo {
+    max-width: 150px;
+}
+
+.banner{
+    height: 600px;
+    background: grey url("../img/mobile-banner.jpg") no-repeat center bottom ;
+    background-size:cover;
+}
+
+.banner h1 {
+    margin:0;
+    padding-top: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Main Nav */
+.nav-list {
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1em 0;
+    display: block;
+}
+.nav-list a:hover {
+    background-color: #00ADD8;
+}
+
+.nav-list li {
+    border-bottom: solid 1px gray;
+}
+.current {
+    background-color: #00ADD8;
+}
+
+
+/* Main */
+
+/* Mobile app section */
+
+.app img{
+    width:100%;
+}
+
+.app .btn{
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.app .btn:hover{
+    background-color: #00ADD8;
+}
+
+/* Actions */
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.actions-list li img{
+    width: 100%;
+}
+
+.actions-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+
+footer {
+    border-top: 2px solid #00ADD8;
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+}
+footer .copy {
+    text-align: right;
+}
+
+footer a {
+    color: inherit;
+}
+footer a:hover{
+    color: #00ADD8;
+}
+
+
+
+/*
+---------------------------------------
+Climate Action Page CSS
+---------------------------------------
+*/
+.card {
+    border: 1px solid #00ADD8;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+.card .info {
+    padding: 1em;
+}
+
+.btn {
+    text-decoration: none;
+    color: inherit;
+    border: solid 1px grey;
+    padding: 20px;
+    border-radius: 4px;
+    display: inline-block
+}
+
+.btn:hover {
+    background-color: #00ADD8;
+
+}
+/* 
+news section
+*/
+
+.news img {
+    width:100%;
+}
+
+
+
+/* Desktop styles */
+
+@media screen and (min-width: 600px) {
+    html{
+        font-size: 16px;
+    }
+    .mobile-logo{
+        display: none;
+    }
+
+    .desktop-logo{
+        display:inline-block;
+        max-width: 300px;
+    }
+    .banner {
+        background-image: url("../img/desktop-banner.jpg");
+    }
+    .banner h1 {
+        color: #fff;
+    }
+/* Main Nav */
+    .nav-list {
+        display: flex;
+    }
+    .nav-list li{
+        flex: 1;
+        border-bottom: none;
+        border-right: 1px solid gray;
+    }
+
+/*  App section */
+
+    .app img {
+        width:40%;
+        float: left;
+        margin-right: 1rem;
+    }
+    .app .btn{
+        float: right;
+    }
+
+    /*
+---------------------------------------
+Climate Action Page CSS
+---------------------------------------
+*/
+
+
+}
+
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
+
+        /*
+---------------------------------------
+Climate Action Page CSS
+---------------------------------------
+*/
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header header"
+    "left right1"
+    "left right2"
+    ;
+    gap: 1em;
+}
+.news h2 {
+    grid-area: header;
+}
+.left {
+    grid-area: left;
+}
+.right:nth-child(1) {
+    grid-area: right1;
+}
+.right:nth-child(2) {
+    grid-area: right2;
+}
+.news .right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+}
+.news .right img {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.news .right h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+}

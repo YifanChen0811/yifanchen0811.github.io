@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--document information-->
+<meta charset="UTF-8">
+<title>Reggie's Coffee Shop - Contact</title>
+</head>
+
+<body>
+    <!-- This is the content comment -->
+    <header>
+            <h1>Welcome to <span>Reggie's Coffee Shop</span></h1>
+        <nav>
+        <ul>
+                <li>
+                    <a href="index.html">home</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact us</a>
+                </li>
+                <li>
+                    <a href="https://www.yummly.com/recipe/Banana-Bread-1033797?prm-v1" target="_blank">get the
+                        recipe</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <h2>Contact us</h2>
+        <table>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon-Fri</td>
+                    <td>6am-9pm</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8am-11pm</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+        <section>
+            <form action="thanks.html" method="post">
+                <div>
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="yifan" value="" required>
+                </div>
+                <label for="youremail">Email</label>
+                <input type="email" id="youremail" name="youremail" placeholder="xxxx@xx.com" required>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="1"> </textarea>
+                </div>
+                <label for="tickets">How many tickets?(sold in pairs)</label>
+                <input type="number" id="tickets" name="tickets" min="0" max="10" step="2" required>
+                <div>
+                </div>
+                <label for="row">Select row</label>
+                <select name="row" id="row">
+                    <option value="front">front</option>
+                    <option value="middle" selected>middle</option>
+                    <option value="back">back</option>
+                </select>
+                <div>
+                    <h3>Have you been here before?</h3>
+                    <label for="yes">yes</label>
+                    <input type="radio" name="past" id="yes" checked>
+                    <label for="no">no</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+                <div>
+                    <h3>Policies</h3>
+                    <label for="policies">I agree.</label>
+                    <input type="checkbox" name="policies" id="policies">
+                </div>
+
+                <button type="submit">send</button>
+            </form>
+        </section>
+    </main>
+    <hr>
+
+    <footer>
+        <h3>See you next time!</h3>
+        <p>Copyright &copy;2021 Reggie&prime;s Coffee Shop</p>
+        <dl>
+            <dt>cities</dt>
+            <dd>ottawa</dd>
+            <dd>toronto</dd>
+        </dl>
+    </footer>
+
+</body>
+
+</html>

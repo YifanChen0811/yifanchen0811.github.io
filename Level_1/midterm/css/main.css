@@ -1,0 +1,182 @@
+html {
+    background-color: #aad4cf;
+}
+
+body {
+    margin-right: 15%;
+    margin-left: 15%;
+    z-index: 999;
+    position: relative;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    background-color: #dffaf7;
+    box-shadow: 0px 0px 20px 5px #dffaf7;
+
+}
+
+/* main header */
+h1 {
+    margin-top: -20px;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: normal;
+    background: url(../images/lone-starfish-wide.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* navigation */
+nav ul {
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: -30px;
+    text-align: center;
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    width: 32%;
+}
+
+nav ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 140%;
+}
+
+nav ul :hover {
+    text-decoration: underline;
+}
+
+/* make the split line between options #s is id of study */
+#s {
+    border-left: black solid 1px;
+    padding-left: 10%;
+    border-right: black solid 1px;
+    padding-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* main */
+main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* image */
+img {
+    width: 250px;
+    height: auto;
+}
+
+.img1 {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/*overflow with position */
+
+.img1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.img1>p {
+    width: 55px;
+    position: absolute;
+    left: -30%;
+    top: 0;
+    background-color: #aad4cf;
+    color: white;
+    padding: 10px;
+    transition: all 500ms ease-in;
+}
+
+.img1:hover p {
+    left: 0;
+}
+
+
+/* clear float */
+h2 {
+    clear: both;
+}
+
+/* adjust position of facts */
+main ul {
+    padding: 0;
+    position: relative;
+    left: 15px;
+}
+
+/* create form border */
+form {
+    border: black 1px solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* adjust input area size */
+#Name,
+#Email,
+textarea {
+    width: 99%;
+}
+
+/* beautify the button */
+#send {
+    padding: 10px;
+    border: black 1px solid;
+    background-color: #dffaf7;
+    color: black;
+    text-decoration: none;
+}
+
+#send,
+#send:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#send:hover {
+    background-color: #aad4cf;
+}
+
+/* footer */
+footer {
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+
+/* thankyou page */
+#thankyou {
+    position: relative;
+    left: 36%;
+}
+
+#thankyou,
+#thankyou :visited {
+    font-size: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+#thankyou:hover {
+    text-decoration: underline;
+}
+
+/* Done! */
+/* Thank you for checking the codes! */

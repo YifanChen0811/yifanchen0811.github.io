@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* reset */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* clearfix */
+
+/* custom css */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+h1 {
+    font-size: 5.063rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3.375rem;
+    font-weight: bold;
+    margin: 1em 0 0.5em 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.container {
+    padding: 1rem;
+}
+
+/* header */
+.desktop-logo {
+    display: none;
+}
+
+.mobile-logo {
+    max-width: 150px;
+}
+
+.banner {
+    height: 600px;
+    background: grey url(../images/mobile-banner.jpg) no-repeat center bottom;
+    background-size: cover;
+}
+
+.banner h1 {
+    padding-top: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* main nav */
+.nav-list {
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1em;
+    display: block;
+}
+
+.nav-list li {
+    border-bottom: solid gray 1px;
+}
+
+.current {
+    background-color: #00add8;
+}
+
+.nav-list a:hover {
+    background-color: #00add8;
+}
+
+/* main */
+
+/* mobile app section */
+
+.app img {
+    width: 100%;
+}
+
+.app .btn {
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.app .btn:hover {
+    background-color: #00add8;
+}
+
+/* Actions */
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.actions-list li img {
+    width: 100%;
+}
+
+.actions-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* footer */
+
+footer {
+    border-top: #00add8 solid 2px;
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+footer .copy {
+    text-align: right;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover {
+    color: #00add8;
+}
+
+/* desktop styles */
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: inline-block;
+        max-width: 300px;
+    }
+
+    .banner {
+        background-image: url(../images/desktop-banner.jpg)
+    }
+
+    .banner h1 {
+        color: white;
+    }
+
+    /* main nav */
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1 0 0;
+        border-bottom: none;
+        border-right: solid grey 1px;
+    }
+
+    /* app section */
+
+    .app img {
+        width: 40%;
+        float: left;
+        margin-right: 1rem;
+    }
+
+    .app .btn {
+        float: right;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
+
+}
