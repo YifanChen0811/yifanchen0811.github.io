@@ -1,0 +1,107 @@
+/* Make max width to all content prevent scroll bar, make page fill the window, set the font*/
+body {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #3e4e50;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body #main {
+    xmargin: 0 0;
+    min-width: 100%;
+}
+
+/* adjust nav bar, clean the base.css, make it looks normal! */
+#nav.nav {
+    background-color: #3e4e50;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 5rem 0px;
+    position: static;
+}
+
+/* adjust the nav content, change font color, adjust the align to make it looks formal */
+#nav.nav .nav-link {
+    color: #f8f7f9;
+    padding: 5rem 4%;
+}
+
+/* add hover motion to make it interactive */
+#nav.nav .nav-link:hover {
+    background-color: #232d2e;
+}
+
+#nav.nav .nav-link:active {
+    color: gray;
+}
+
+/* change home background color&font style,color */
+#home.home {
+    background-color: #f8f7f9;
+    color: #3e4e50;
+}
+
+#home.home h1 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#home.home {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* About
+ change background color to dark blue, font size keep all the same, make about clear, professional, readable */
+#about.about {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #04002e;
+    color: #f8f7f9;
+    padding: 3rem 5%;
+}
+
+#about.about .section-title {
+    font-size: 3rem;
+}
+
+#about.about .about-image {
+    position: fixed;
+}
+
+#about.about p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Contact */
+#contact.contact {
+    background-color: #f8f7f9;
+    color: #04002e;
+    padding: 3rem 5%;
+    font-size: 1.5rem;
+}
+
+#contact.contact h2 {
+    font-size: 3rem;
+}
+
+#contact.contact form {
+    background-color: #3e4e50;
+    min-width: 100%;
+    margin: 0;
+    padding: 3rem;
+}
+
+#contact.contact form div {
+    font-size: 1rem;
+    color: #f8f7f9;
+}
+
+#contact.contact form input,
+textarea {
+    max-width: 80px;
+}
