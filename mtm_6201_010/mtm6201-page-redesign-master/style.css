@@ -1,14 +1,16 @@
+/* #F8F7F9(white), #3E4E50(smoke gray), #232d2e(dark 3e4e50), #04002e(main content color) */
+
 /* Make max width to all content prevent scroll bar, make page fill the window, set the font*/
 body {
     max-width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     background-color: #3e4e50;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
 body #main {
-    xmargin: 0 0;
+    margin: 0 auto;
     min-width: 100%;
 }
 
@@ -19,7 +21,6 @@ body #main {
     width: 100%;
     padding: 0;
     margin: 5rem 0px;
-    position: static;
 }
 
 /* adjust the nav content, change font color, adjust the align to make it looks formal */
@@ -38,6 +39,7 @@ body #main {
 }
 
 /* change home background color&font style,color */
+/* consistent with navigation */
 #home.home {
     background-color: #f8f7f9;
     color: #3e4e50;
@@ -68,8 +70,9 @@ body #main {
     font-size: 3rem;
 }
 
+/* no image in mobile device! */
 #about.about .about-image {
-    position: fixed;
+    width: 0;
 }
 
 #about.about p {
@@ -78,30 +81,71 @@ body #main {
 }
 
 /* Contact */
+/* make consistent paragraph and title */
 #contact.contact {
     background-color: #f8f7f9;
     color: #04002e;
-    padding: 3rem 5%;
     font-size: 1.5rem;
+    padding: 3rem 0 3rem 0;
 }
 
 #contact.contact h2 {
     font-size: 3rem;
+    padding: 0;
+    margin: 0;
 }
 
-#contact.contact form {
-    background-color: #3e4e50;
-    min-width: 100%;
+#contact.contact p {
+    padding: 0 5%;
+}
+
+/* make form centered for mobile users */
+#contact.contact .contact-form {
+    background-color: #f8f7f9;
+    max-width: 100%;
     margin: 0;
-    padding: 3rem;
+    padding: 0;
 }
 
 #contact.contact form div {
     font-size: 1rem;
-    color: #f8f7f9;
+    color: #04002e;
+    padding: 0.2rem 3rem;
 }
 
-#contact.contact form input,
-textarea {
-    max-width: 80px;
+#contact.contact form div input {
+    max-width: 24rem;
+    margin-bottom: 1rem;
+}
+
+#contact.contact form div textarea {
+    max-width: 24rem;
+    margin-bottom: 1rem;
+}
+
+
+/* decoration the button, make it consistent */
+#contact.contact form button {
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-left: 3rem;
+    background-color: #04002e;
+    color: #f8f7f9;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+/* make button motion to interact */
+#contact.contact form button:active {
+    color: gray;
+}
+
+
+/* footer, just clear! */
+footer {
+    color: #f8f7f9;
+    padding-left: 5%;
 }
