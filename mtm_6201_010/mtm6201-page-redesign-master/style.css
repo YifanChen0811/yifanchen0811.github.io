@@ -114,13 +114,13 @@ body #main {
 }
 
 #contact.contact form div input {
-    max-width: 24rem;
+    width: 100%;
     margin-bottom: 1rem;
 }
 
 #contact.contact form div textarea {
-    max-width: 24rem;
     margin-bottom: 1rem;
+    max-width: 100%;
 }
 
 
@@ -135,7 +135,7 @@ body #main {
     box-shadow: none;
     width: 8rem;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* make button motion to interact */
@@ -149,3 +149,56 @@ footer {
     color: #f8f7f9;
     padding-left: 5%;
 }
+
+/* media queries for 650px and higher */
+@media screen and (min-width: 650px) {
+
+    /* make font bigger, easier to browse on bigger devices */
+    #nav.nav a {
+        font-size: 200%;
+    }
+
+    #home.home h1 {
+        font-size: 600%;
+    }
+
+    /* put image back, adjust the position for best effect */
+    #about.about .about-image {
+        position: relative;
+        top: -50px;
+        width: 300px;
+        padding: 0;
+    }
+
+    /* adjust contact form for better experience on bigger screens */
+    #contact.contact .contact-form {
+        max-width: none;
+        margin-right: 0;
+        width: auto;
+    }
+
+    #contact.contact form div.contact-form-section {
+        padding: 0.2rem 4rem;
+        margin-right: 0%;
+    }
+
+    #contact.contact input {
+        max-width: none;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #contact.contact form div textarea {
+        max-width: none;
+        padding-right: 0;
+        height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    /* place button center for computer user */
+    #contact.contact form button {
+        margin-left: calc(50% - 4rem);
+    }
+}
+
+/* Thank you for checking my code! */
