@@ -26,7 +26,7 @@ body #main {
 /* adjust the nav content, change font color, adjust the align to make it looks formal */
 #nav.nav .nav-link {
     color: #f8f7f9;
-    padding: 5rem 4%;
+    padding: 5rem 3.5%;
 }
 
 /* add hover motion to make it interactive */
