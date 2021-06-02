@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- create grid for media queries -->
+    <div class="grid">
+        <header>
+            <img src="./images/logo/logo.png" alt="logo">
+            <h1>Want to be your own boss?</h1>
+            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+        </header>
+        <main>
+            <img src="./images/bg-image/scooter.svg" alt="mainimg">
+            <div class="apply">
+                <h2>Apply Now</h2>
+                <p>Enter your info below</p>
+                <form action="#" method="POST">
+                    <label for="First_name"></label>
+                    <input type="text" id="First_name" name="First_name" placeholder="First name" required>
+                    <!--  -->
+                    <label for="Last_name"></label>
+                    <input type="text" id="Last_name" name="Last_name" placeholder="Last name" required>
+                    <!--  -->
+                    <label for="Phone_number"></label>
+                    <input type="text" id="Phone_number" name="Phone_number" placeholder="Phone number" required>
+                    <!--  -->
+                    <label for="Email_address"></label>
+                    <input type="email" id="Email_address" name="Email_address" placeholder="Email Address" required>
+                    <!--  -->
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree" id="Iagree">I agree to dash terms</label>
+                    <!--  -->
+                    <button class="drive" type="submit">DRIVE WITH US</button>
+                </form>
+                <p>Already applied? <a href="#">Check your application status here</a></p>
+            </div>
+        </main>
+    </div>
+</body>
+<footer>
+    <!-- create div for flexbox -->
+    <div class="calculate">
+        <h3>See how much you can earn with Dash.</h3>
+        <p>how many hours do you want to drive with us this week?</p>
+        <form action="#" method="POST">
+            <label for="Hours"></label>
+            <input type="text" id="Hours" name="Hours" placeholder="Hours" required>
+            <!--  -->
+            <label for="City"></label>
+            <input type="text" id="City" name="City" placeholder="City" required>
+            <button class="cal" type="submit">CALCULATE</button>
+        </form>
+    </div>
+    <!-- create div for flexbox -->
+    <div class="icons">
+        <img src="./images/icons/facebook.svg" alt="facebook">
+        <img src="./images/icons/instagram.svg" alt="instagram">
+        <img src="./images/icons/twitter.svg" alt="twitter">
+        <img src="./images/icons/linkedin.svg" alt="linkedin">
+    </div>
+</footer>
+
+</html>
