@@ -166,8 +166,14 @@ header p {
     padding: 20px 0;
 }
 
-main img {
-    padding: 0.5rem 0;
+/* adding the background image, for further adaption */
+main {
+    background-image: url(../images/bg-image/scooter.svg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: center;
+    padding-top: 60%;
+
 }
 
 /* inside the white box, text color#333131 */
@@ -279,7 +285,7 @@ footer form {
 
 /* same as previous one */
 footer form #Hours {
-    grid-column: ;
+    grid-column: 1/2;
     grid-row: 1/2;
     border-radius: 11px;
     border: none;
@@ -299,7 +305,7 @@ footer form .cal {
     grid-row: 2/3;
 }
 
-
+/* changing the placeholder to the example */
 footer form input::placeholder {
     color: #9B9B9B;
     font-weight: medium;
@@ -307,6 +313,7 @@ footer form input::placeholder {
     font-size: 16px;
 }
 
+/* all according to xd file */
 footer form button {
     background-color: #ff8480;
     color: #f7f7ff;
@@ -322,4 +329,157 @@ footer .icons {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+    /* adjust size to the new screen according to XD file */
+    header,
+    main {
+        padding: 15px 60px;
+    }
+
+    header h1 {
+        font-size: 80px;
+        line-height: 97px;
+    }
+
+    header p {
+        padding: 0;
+        margin-top: 30px;
+        line-height: 29px;
+    }
+
+    main {
+        padding-top: 60%;
+    }
+
+    .apply {
+        margin-bottom: 60px;
+    }
+
+    .apply p {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .apply .aa {
+        font-size: 17px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .apply form input::placeholder {
+        font-size: 18px;
+    }
+
+    .apply form #agree {
+        font-size: 20px;
+    }
+
+    /* footer, changing grid and icons */
+    footer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    /* reset the length, combine into 1 row */
+    footer form {
+        grid-template-columns: 122px 260px 1fr;
+        grid-template-rows: 40px;
+    }
+
+    footer form #Hours {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 11px;
+        border: none;
+        padding-left: 10px;
+    }
+
+    footer form #City {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border-radius: 11px;
+        border: none;
+        padding-left: 10px;
+    }
+
+    footer form .cal {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    footer .icons {
+        width: 260.5px;
+        padding-left: 35%;
+        padding-right: 35%;
+    }
+}
+
+
+
+/* desktop */
+@media screen and (min-width: 1920px) {
+
+    /* reset background image for better effect */
+    .maingrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-image: url(../images/bg-image/scooter.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 820px 600px;
+    }
+
+    /* cancel the previous image */
+    main {
+        background-image: none;
+    }
+
+    /* set grid, homepage in 2 parts horizontal*/
+    header {
+        padding: 15px 105px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        max-width: 536px;
+    }
+
+    header h1 {
+        margin-top: 30%;
+    }
+
+    header p {
+        padding: 0;
+    }
+
+    /* put apply to the right position */
+    .apply {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        max-width: 535px;
+        margin: 0;
+        position: relative;
+        top: -280px;
+        right: -200px;
+    }
+
+    /* make footer flex to put elements on the same line   */
+    footer {
+        display: flex;
+        padding-left: 105px;
+        padding-right: 105px;
+    }
+
+    footer .calculate {
+        max-width: 615px;
+    }
+
+    footer .icons {
+        padding: 0;
+        margin-left: 55%;
+    }
 }
