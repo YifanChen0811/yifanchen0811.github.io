@@ -1,0 +1,315 @@
+/* This is common css for all websites */
+/* fonts: Open Sans Light Italic */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Header Banner add h1 with the background image */
+.banner img {
+    width: 100%;
+}
+
+.banner h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    background-image: url(../image/wood.jpg);
+    padding: 1rem 0;
+}
+
+/* nav, using flexbox */
+header nav {
+    background-image: url(../image/wood.jpg);
+    margin: 0;
+
+    position: relative;
+    bottom: 4rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem 0;
+}
+
+/* adjust nav text, white font for contrast */
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* adding transition to navigation hoovers */
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+/* make active more obvious and smooth */
+header nav ul li a:active {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: none;
+}
+
+/* Header end */
+
+/* adjusting logo image to normal size */
+.logo img {
+    margin-top: -4rem;
+    width: 70%;
+    /* to make image centered */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    text-align: center;
+    width: 70%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    /* make text centered */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* making self-changing photos by transition and animation */
+.slide {
+    margin-top: 3rem;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 400px;
+}
+
+/* using animation to make it disappear */
+@keyframes scale {
+
+    0%,
+    20% {
+        transform: scale(1);
+    }
+
+    25%,
+    95% {
+        transform: scale(0);
+    }
+}
+
+/* adding transition to make it appear and then disappear */
+/* I calculate the changing speed to make the animation continuing */
+.ice1 {
+    position: absolute;
+    animation-name: scale;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+
+.ice2 {
+    position: absolute;
+    animation-name: scale;
+    animation-duration: 20s;
+    animation-delay: -5s;
+    animation-iteration-count: infinite;
+}
+
+.ice3 {
+    position: absolute;
+    animation-name: scale;
+    animation-duration: 20s;
+    animation-delay: -10s;
+    animation-iteration-count: infinite;
+}
+
+.ice4 {
+    position: relative;
+    animation-name: scale;
+    animation-duration: 20s;
+    animation-delay: -15s;
+    animation-iteration-count: infinite;
+}
+
+/* main end */
+
+/* adding background to footer, make font size same as the main text */
+footer {
+    margin-top: 1rem;
+    background-image: url(../image/wood.jpg);
+    color: white;
+    text-align: center;
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+}
+
+/* Homepage & Common Elements done */
+
+/* Menu */
+/* Use flex for later purpose */
+.flexmenu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: -50px;
+    margin-bottom: -2rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Make all elements in same size */
+.product,
+.product img,
+.product .product_text {
+    width: 100%;
+    margin-bottom: -2rem;
+}
+
+/* Put text on images */
+.product img:hover {
+    opacity: 40%;
+    /* adding transition to image hoovers, to look through the image */
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.product .product_text {
+    position: relative;
+    bottom: 15rem;
+    left: 10%;
+    opacity: 200%;
+    /* hidden text behind the image */
+    z-index: -1;
+    font-size: 1.5rem;
+}
+
+/* Contact */
+.contact_grid {
+    display: grid;
+    margin-top: -50px;
+    margin-left: 10%;
+}
+
+/* use flex to align items vertically */
+.contact_grid form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+form div input,
+form div textarea {
+    width: 110%;
+    border-radius: 3px;
+    border: black 0.5px solid;
+}
+
+form div {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+
+}
+
+/* beautify the button, same background as the nav */
+.btn {
+    background-image: url(../image/wood.jpg);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 650px) {
+    .banner {
+        background-image: url(../image/wood.jpg);
+    }
+
+    .banner img {
+        max-width: 650px;
+        /* Make banner centered */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 50%;
+        /* Make logo centered */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ice1,
+    .ice2,
+    .ice3,
+    .ice4 {
+        /* all images visible in the page  */
+        animation: none;
+        position: relative;
+        max-width: 600px;
+        /* Make slides centered */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+    nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    /* make images display horizontally */
+    .slide {
+        display: flex;
+    }
+
+    .slide img {
+        width: 25%;
+    }
+
+    /* Menu */
+    .product {
+        max-width: 90%;
+        /* make menu centered */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contact */
+    /* use grid to put map aside */
+    .contact_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- add image for banner: make banner image optimize -->
+        <div class="banner">
+            <img srcset="./image/banner/banner-320.jpg 320w,
+            ./image/banner/banner-640.jpg 640w,
+            ./image/banner/banner-1024.jpg 1024w,
+            ./image/banner/banner-1200.jpg 1200w" 
+            sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" 
+            src="./image/banner/banner-640.jpg" alt="banner">
+            <h1>
+                Welcome to Mama Apron
+            </h1>
+        </div>
+        <!-- navigation: Home Menu Contacts  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- add logo in div, make logo image optimize -->
+        <div class="logo">
+            <img srcset="./image/logo/logo-320 320w,
+            ./image/logo/logo-640 640w,
+            ./image/logo/logo-1024 1024w,
+            ./image/logo/logo-1200 1200w" 
+            sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" 
+            src="./image/logo/logo-640" alt="logo">
+        </div>
+        <!-- main text -->
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus similique quaerat
+        </div>
+        <!-- container for slide show, I want to try using the previous knowledge -->
+        <div class="slide">
+            <!-- images all optimized -->
+            <!-- ice1 -->
+            <img class="ice1" srcset="./image/ice1/ice1-320 320w,
+            ./image/ice1/ice1-640 640w,
+            ./image/ice1/ice1-1024 1024w,
+            ./image/ice1/ice1-1200 1200w" 
+            sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" 
+            src="./image/ice1/ice1-640" alt="ice1">
+            <!-- ice2 -->
+            <img class="ice2" srcset="./image/ice2/ice2-320.jpg 320w,
+            ./image/ice2/ice2-640.jpg 640w,
+            ./image/ice2/ice2-1024.jpg 1024w,
+            ./image/ice2/ice2-1200.jpg 1200w" 
+            sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" 
+            src="./image/ice2/ice2-640.jpg" alt="ice2">
+            <!-- ice3 -->
+            <img class="ice3" srcset="./image/ice3/ice3-320.jpg 320w,
+            ./image/ice3/ice3-640.jpg 640w,
+            ./image/ice3/ice3-1024.jpg 1024w,
+            ./image/ice3/ice3-1200.jpg 1200w" 
+            sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" 
+            src="./image/ice3/ice3-640.jpg" alt="ice3">
+            <!-- ice4 -->
+            <img class="ice4" srcset="./image/ice4/ice4-320.jpg 320w,
+            ./image/ice4/ice4-640.jpg 640w,
+            ./image/ice4/ice4-1024.jpg 1024w,
+            ./image/ice4/ice4-1200.jpg 1200w" 
+            sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" 
+            src="./image/ice4/ice4-640.jpg" alt="ice4">
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">Copyright by Mama Apron</div>
+    </footer>
+</body>
+
+</html>

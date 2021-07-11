@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- add image for banner: make banner image optimize -->
+        <div class="banner">
+            <img srcset="./image/banner/banner-320.jpg 320w,
+            ./image/banner/banner-640.jpg 640w,
+            ./image/banner/banner-1024.jpg 1024w,
+            ./image/banner/banner-1200.jpg 1200w" sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" src="./image/banner/banner-640.jpg" alt="banner">
+            <h1>
+                Menu
+            </h1>
+        </div>
+        <!-- navigation: Home Menu Contacts  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- create div for flexbox menu -->
+        <div class="flexmenu">
+            <!-- use one class for all products in menu -->
+            <!-- Cup -->
+            <div class="product">
+                <img srcset="./image/cup/cup-320.jpg 320w,
+                ./image/cup/cup-640.jpg 640w,
+                ./image/cup/cup-1024.jpg 1024w,
+                ./image/cup/cup-1200.jpg 1200w" sizes="(max-width: 320px) 320px,
+                (max-width: 640px) 640px,
+                (max-width: 1024px) 1024px,
+                (max-width: 1200px) 1200px" src="./image/cup/cup-640.jpg" alt="cup">
+                <div class="product_text">
+                    <h2>Cup IceCream</h2>
+                    <p>Our most popular product!</p>
+                </div>
+            </div>
+            <!-- Cone -->
+            <div class="product">
+                <img srcset="./image/cone/cone-320.jpg 320w,
+                ./image/cone/cone-640.jpg 640w,
+                ./image/cone/cone-1024.jpg 1024w,
+                ./image/cone/cone-1200.jpg 1200w" sizes="(max-width: 320px) 320px,
+                (max-width: 640px) 640px,
+                (max-width: 1024px) 1024px,
+                (max-width: 1200px) 1200px" src="./image/cone/cone-640.jpg" alt="cone">
+                <div class="product_text">
+                    <h2>Cone</h2>
+                    <p>Kids' favourite!</p>
+                </div>
+            </div>
+            <!-- Gelato -->
+            <div class="product">
+                <img srcset="./image/gelato/gelato-320.jpg 320w,
+                ./image/gelato/gelato-640.jpg 640w,
+                ./image/gelato/gelato-1024.jpg 1024w,
+                ./image/gelato/gelato-1200.jpg 1200w" sizes="(max-width: 320px) 320px,
+                (max-width: 640px) 640px,
+                (max-width: 1024px) 1024px,
+                (max-width: 1200px) 1200px" src="./image/gelato/gelato-640.jpg" alt="gelato">
+                <div class="product_text">
+                    <h2>Gelato</h2>
+                    <p>Look so good on Instagram!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">Copyright by Mama Apron</div>
+    </footer>
+</body>
+
+</html>

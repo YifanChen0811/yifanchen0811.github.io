@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- add image for banner: make banner image optimize -->
+        <div class="banner">
+            <img srcset="./image/banner/banner-320.jpg 320w,
+            ./image/banner/banner-640.jpg 640w,
+            ./image/banner/banner-1024.jpg 1024w,
+            ./image/banner/banner-1200.jpg 1200w" sizes="(max-width: 320px) 320px,
+            (max-width: 640px) 640px,
+            (max-width: 1024px) 1024px,
+            (max-width: 1200px) 1200px" src="./image/banner/banner-640.jpg" alt="banner">
+            <h1>
+                Contacts
+            </h1>
+        </div>
+        <!-- navigation: Home Menu Contacts  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- create div for grid purpose -->
+        <div class="contact_grid">
+            <!-- create contact sheets -->
+            <form action="#" method="post">
+                <div>
+                    <label for="fullname">Your Name</label>
+                    <input id="fullname" type="text" name="fullname">
+                </div>
+
+                <div>
+                    <label for="email">Your Email</label>
+                    <input id="email" type="text" name="email">
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="25" rows="4"></textarea>
+                </div>
+
+                <!-- use input instead of button -->
+                <div>
+                    <input type="submit" value="Contact Us!" class="btn">
+                </div>
+
+            </form>
+            <!-- google map -->
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567607!2d-75.7571254843203!3d45.34992777909977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1625518141159!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="copyright">Copyright by Mama Apron</div>
+    </footer>
+</body>
+
+</html>
