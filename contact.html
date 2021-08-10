@@ -1,60 +1,74 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS, I won't use bootstrap this assignment! I use it just for normalize -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Contact - Yifan Chen's Portfolio Website </title>
-  </head>
+  <!-- Bootstrap CSS, I won't use bootstrap this assignment! I use it just for normalize -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <body>
-    <!-- Header: Use flexbox to display the navigation -->
-    <header>
-      <div class="nav-flex">
-        <img src="./img/logo.jpg" alt="logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main>
-        <div class="top-bar">
-            <p>
-                Contact
-            </p>
-        </div>
-        <div class="text">
-            <h2>Phone</h2>
-            <p>1234567890</p>
-        </div>
-        <div class="text">
-            <h2>E-mail</h2>
-            <p>chen0811@algonquinlive.com</p>
-        </div>
-        <div class="text">
-            <h2>LinkedIn</h2>
-            <p>https://www.linkedin.com/in/yifan-chen-680655203/</p>
-        </div>
-        <img src="./img/Contact.svg" alt="contact">
-    </main>
+  <!-- Google Font: Dosis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
 
-    <!-- Footer: only one line -->
-    <footer>
-      <p>Copyright by Yifan Chen</p>
-    </footer>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Own Css -->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <title> Contact - Yifan Chen's Portfolio Website </title>
+</head>
+
+<body>
+  <!-- Header: Use flexbox to display the navigation -->
+  <header>
+      <img src="./img/logo.jpg" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main class="contact">
+    <!-- add top bar div for special layout -->
+    <div class="top-bar">
+      <p>
+        Contact
+      </p>
+    </div>
+    <!-- same text as about text -->
+    <div class="text" style="--order:1">
+      <h2>Phone</h2>
+      <p>1234567890</p>
+    </div>
+    <div class="text" style="--order:2">
+      <h2>E-mail</h2>
+      <p>chen0811@algonquinlive.com</p>
+    </div>
+    <div class="text" style="--order:3">
+      <h2>LinkedIn</h2>
+      <p>https://www.linkedin.com/in/yifan-chen-680655203/</p>
+    </div>
+    <!-- contact vector draw -->
+    <img src="./img/Contact.svg" alt="contact">
+  </main>
+
+  <!-- Footer: only one line -->
+  <footer>
+    <p>Copyright by Yifan Chen</p>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

@@ -1,0 +1,249 @@
+/* Common settings */
+
+/* font: Dosis Extra light 200 & Light 300
+font-color: #092035, Oxford Blue */
+:root {
+    --body-copy-color: #092035;
+}
+
+:root {
+    --body-background-color: #f4f2f3;
+}
+
+:root {
+    --body-yellow: #efdb25;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    color: var(--body-copy-color);
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    color: var(--body-copy-color);
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color: var(--body-copy-color);
+}
+
+a {
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
+    color: var(--body-copy-color);
+    text-decoration: none;
+}
+
+/* background color#f4f2f3 cultured */
+body {
+    background-color: var(--body-background-color);
+}
+
+/* footer color#092035, font color#f4f2f3 */
+footer {
+    background-color: var(--body-copy-color);
+}
+
+footer p {
+    color: var(--body-background-color);
+}
+
+/* header centered */
+header {
+    text-align: center;
+    display: block;
+    width: 70%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* setting logo size */
+header img {
+    max-width: 50px;
+}
+
+/* navigation list: flex to make logo and navigation horizontal */
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a {
+    padding: 1rem;
+}
+
+/* add padding to footer for better visual experience */
+footer {
+    padding-bottom: 1rem;
+}
+
+/* Adding animation to page, make it slide in from aside one by one */
+@keyframes slide {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+div {
+    animation-name: slide;
+    /* i use calc for time calculating, var--order is in html file using "style" */
+    animation-duration: calc(var(--order) * 1s);
+    animation-iteration-count: 1;
+}
+
+
+/* Homepage phone */
+/* intro image centered */
+.introduction img {
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* all text align center */
+h1,
+h2,
+p,
+a {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* portfolio image centered */
+.home-portfolio img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+/* link hover transition: make it responsive for better experience */
+a:hover {
+    background-color: var(--body-copy-color);
+    color: var(--body-background-color);
+    transition: 0.7s;
+}
+
+main div {
+    margin-bottom: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Top bar settings */
+/* make it sticky at the top of screen */
+.top-bar {
+    background-color: var(--body-copy-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding-top: 0.5rem;
+}
+
+.top-bar p {
+    color: var(--body-background-color);
+    font-size: 24px;
+}
+
+/* portfolio page phone */
+/* text settings, i use all same class: .portfolio-content on them */
+.portfolio-content div {
+    padding: 0;
+}
+
+.portfolio-content div h2,
+.portfolio-content div p,
+.portfolio-content div a {
+    text-align: left;
+}
+
+.portfolio-grid {
+    display: grid;
+}
+
+/* adjust the portfolio link option */
+.portfolio-content ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.portfolio-content li {
+    list-style: none;
+}
+
+.portfolio-content li a {
+    padding: 0.5rem;
+}
+
+/* contact phone */
+/* set the limit to image */
+.contact img {
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* laptop display */
+@media screen and (min-width: 800px) {
+
+    /* change the header style for larger screen */
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul {
+        padding-top: 0.5rem;
+    }
+
+    /* about image */
+    .introduction img {
+        max-width: 500px;
+    }
+
+    /* portfolio laptop */
+    .portfolio-content img {
+        float: left;
+    }
+
+    .portfolio-content>div {
+        position: relative;
+        left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .portfolio-content h2,
+    p,
+    a {
+        margin: 0;
+    }
+
+}

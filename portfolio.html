@@ -1,94 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS, I won't use bootstrap this assignment! I use it just for normalize -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> Portfolio - Yifan Chen's Portfolio Website </title>
-  </head>
+  <!-- Bootstrap CSS, I won't use bootstrap this assignment! I use it just for normalize -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <body>
-    <!-- Header: Use flexbox to display the navigation -->
-    <header>
-      <div class="nav-flex">
-        <img src="./img/logo.jpg" alt="logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+  <!-- Google Font: Dosis -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
+
+  <!-- Own Css -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title> Portfolio - Yifan Chen's Portfolio Website </title>
+</head>
+
+<body>
+  <!-- Header: Use flexbox to display the navigation -->
+  <header>
+    <img src="./img/logo.jpg" alt="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- add top bar div for special layout -->
+    <div class="top-bar">
+      <p>
+        Portfolio
+      </p>
+    </div>
+    <!-- create grid class div for later css grid -->
+    <div class="portfolio-grid">
+      <!-- all same structure so the same class -->
+      <div class="portfolio-content" style="--order:1">
+        <img class="photography" srcset="./img/photography/photography-320.jpg,
+              ./img/photography/photography-640.jpg,
+              ./img/photography/photography-1024.jpg,
+              ./img/photography/photography-1200.jpg" sizes="(max-width: 320px) 320px,
+              (max-width: 640px) 640px,
+              (max-width: 1024px) 1024px,
+              (max-width: 1200px) 1200px" src="./img/photography/photography-640.jpg" alt="photography">
+        <div>
+          <h2>Photography</h2>
+          <p>I love photography in my daily life</p>
+          <p>"Beauty lies in everyone's eyes"</p>
+          <p>
+          More photos:
+            <!-- outer website link -->
+            <a href="https://chen0811.myportfolio.com" URL>chen0811.myportfolio.com</a></p>
+        </div>
       </div>
-    </header>
-    <main>
-        <div class="top-bar">
-            <p>
-                Portfolio
-            </p>
+      <div class="portfolio-content" style="--order:2">
+        <img class="graphicdesign" srcset="./img/graphicdesign/graphicdesign-320.jpg,
+              ./img/graphicdesign/graphicdesign-640.jpg,
+              ./img/graphicdesign/graphicdesign-1024.jpg,
+              ./img/graphicdesign/graphicdesign-1200.jpg" sizes="(max-width: 320px) 320px,
+              (max-width: 640px) 640px,
+              (max-width: 1024px) 1024px,
+              (max-width: 1200px) 1200px" src="./img/graphicdesign/graphicdesign-640.jpg" alt="graphicdesign">
+        <div>
+          <h2>Graphic Design</h2>
+          <p>I enjoy jamming with Adobe Illustrator. For me, vector draws have special charms.</p>
         </div>
-        <div class="portfolio-content">
-            <img class="photography"
-            srcset="./img/photography/photography-320.jpg,
-            ./img/photography/photography-640.jpg,
-            ./img/photography/photography-1024.jpg,
-            ./img/photography/photography-1200.jpg"
-            sizes="(max-width: 320px) 320px,
-            (max-width: 640px) 640px,
-            (max-width: 1024px) 1024px,
-            (max-width: 1200px) 1200px"
-            src="./img/photography/photography-640.jpg" alt="photography">
-            <h2>Photography</h2>
-            <p>I love photography in my daily life <blockquote>"Beauty lies in everyone's eyes"</blockquote>More photos: <br>chen0811.myportfolio.com</p>
-        </div>
-        <div class="portfolio-content">
-            <img class="graphicdesign"
-            srcset="./img/graphicdesign/graphicdesign-320.jpg,
-            ./img/graphicdesign/graphicdesign-640.jpg,
-            ./img/graphicdesign/graphicdesign-1024.jpg,
-            ./img/graphicdesign/graphicdesign-1200.jpg"
-            sizes="(max-width: 320px) 320px,
-            (max-width: 640px) 640px,
-            (max-width: 1024px) 1024px,
-            (max-width: 1200px) 1200px"
-            src="./img/graphicdesign/graphicdesign-640.jpg" alt="graphicdesign">
-            <h2>Graphic Design</h2>
-            <p>I enjoy jamming with Adobe Illustrator. For me, vector draws have special charms.</p>
-        </div>
-        <div class="portfolio-content">
-            <img class="ux"
-            srcset="./img/ux/ux-320.jpg,
-            ./img/ux/ux-640.jpg,
-            ./img/ux/ux-1024.jpg,
-            ./img/ux/ux-1200.jpg"
-            sizes="(max-width: 320px) 320px,
-            (max-width: 640px) 640px,
-            (max-width: 1024px) 1024px,
-            (max-width: 1200px) 1200px"
-            src="./img/ux/ux-640.jpg" alt="ux">
-            <h2>User Experience Design</h2>
-            <p>It's an honour to serve people through UX Design</p>
-            <ul>
-                <li><a href="https://xd.adobe.com/view/f49bda56-9ff2-49a5-a1dc-c0493c4a2271-a1c8/">Phone</a></li>
-                <li><a href="https://xd.adobe.com/view/fc0c74a5-1ccd-404e-8dfc-64d370f8f3b3-a95f/">Tablet</a></li>
-                <li><a href="https://xd.adobe.com/view/ba72b198-e565-46ea-99a7-7fd87960b4c0-ef21/">Desktop</a></li>
-            </ul>
-        </div>
-    </main>
+      </div>
+      <div class="portfolio-content" style="--order:3">
+        <img class="ux" srcset="./img/ux/ux-320.jpg,
+              ./img/ux/ux-640.jpg,
+              ./img/ux/ux-1024.jpg,
+              ./img/ux/ux-1200.jpg" sizes="(max-width: 320px) 320px,
+              (max-width: 640px) 640px,
+              (max-width: 1024px) 1024px,
+              (max-width: 1200px) 1200px" src="./img/ux/ux-640.jpg" alt="ux">
+        <div>
 
-    <!-- Footer: only one line -->
-    <footer>
-      <p>Copyright by Yifan Chen</p>
-    </footer>
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+          <h2>User Experience Design</h2>
+          <p>It's an honour to serve people through UX Design</p>
+          <ul>
+            <li><a href="https://xd.adobe.com/view/f49bda56-9ff2-49a5-a1dc-c0493c4a2271-a1c8/">Phone</a></li>
+            <li><a href="https://xd.adobe.com/view/fc0c74a5-1ccd-404e-8dfc-64d370f8f3b3-a95f/">Tablet</a></li>
+            <li><a href="https://xd.adobe.com/view/ba72b198-e565-46ea-99a7-7fd87960b4c0-ef21/">Desktop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Footer: only one line -->
+  <footer>
+    <p>Copyright by Yifan Chen</p>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
