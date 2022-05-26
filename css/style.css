@@ -41,8 +41,15 @@ a {
     font-weight: 200;
     color: var(--body-copy-color);
     text-decoration: none;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
+blockquote {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    margin-top: 1rem;
+}
 /* background color#f4f2f3 cultured */
 body {
     background-color: var(--body-background-color);
@@ -203,6 +210,8 @@ main div {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 1px;
 }
 
 
@@ -227,6 +236,7 @@ main div {
     /* portfolio laptop */
     .portfolio-content img {
         float: left;
+        max-width: 300px;
     }
 
     .portfolio-content>div {
