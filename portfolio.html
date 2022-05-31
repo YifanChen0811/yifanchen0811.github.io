@@ -40,13 +40,22 @@
       <p>
         Portfolio
       </p>
+      <div id="topbar">
+        <span id="loadingbar"></span>
+      </div>
     </div>
     <!-- create grid class div for later css grid -->
     <div class="portfolio-grid">
       <!-- all same structure so the same class -->
       <!-- coding -->
       <div class="portfolio-content" style="--order:1">
-        <img class="photography" src="./img/coding.png" alt="coding"><style></style>
+        <img id="coding" srcset="./img/coding/coding-320.jpg,
+        ./img/coding/coding-640.jpg,
+        ./img/coding/coding-1024.jpg,
+        ./img/coding/coding-1200.jpg" sizes="(max-width: 320px) 320px,
+        (max-width: 640px) 640px,
+        (max-width: 1024px) 1024px,
+        (max-width: 1200px) 1200px" src="./img/coding.png" alt="coding">
         <div>
           <h2>HTML, CSS & JavaScript</h2>
           <p>Some people said coding is hard, but I enjoy it.</p>
@@ -59,7 +68,7 @@
       </div>
       <!-- photography -->
       <div class="portfolio-content" style="--order:2">
-        <img class="photography" srcset="./img/photography/photography-320.jpg,
+        <img id="photography" srcset="./img/photography/photography-320.jpg,
               ./img/photography/photography-640.jpg,
               ./img/photography/photography-1024.jpg,
               ./img/photography/photography-1200.jpg" sizes="(max-width: 320px) 320px,
@@ -77,7 +86,7 @@
         </div>
       </div>
       <div class="portfolio-content" style="--order:3">
-        <img class="graphicdesign" srcset="./img/graphicdesign/graphicdesign-320.jpg,
+        <img id="graphicdesign" srcset="./img/graphicdesign/graphicdesign-320.jpg,
               ./img/graphicdesign/graphicdesign-640.jpg,
               ./img/graphicdesign/graphicdesign-1024.jpg,
               ./img/graphicdesign/graphicdesign-1200.jpg" sizes="(max-width: 320px) 320px,
@@ -86,12 +95,12 @@
               (max-width: 1200px) 1200px" src="./img/graphicdesign/graphicdesign-640.jpg" alt="graphicdesign">
         <div>
           <h2>Graphic Design</h2>
-          <p>I enjoy jamming with Adobe Illustrator. For me, vector draws have special charms.</p>
+          <p>I enjoy jamming with Adobe Illustrator. <br>For me, vector draws have special charms.</p>
           <blockquote>"Don't try to be creative since we are already creative"</blockquote>
         </div>
       </div>
       <div class="portfolio-content" style="--order:4">
-        <img class="ux" srcset="./img/ux/ux-320.jpg,
+        <img id="ux" srcset="./img/ux/ux-320.jpg,
               ./img/ux/ux-640.jpg,
               ./img/ux/ux-1024.jpg,
               ./img/ux/ux-1200.jpg" sizes="(max-width: 320px) 320px,
@@ -125,6 +134,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

@@ -40,6 +40,18 @@
       <p>
         Contact
       </p>
+      <div style="width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background-color: var(--body-yellow);
+      position: sticky;
+      top: 0px;
+      padding: 0;
+      margin-left: auto;
+      margin-right: auto;">
+          <span style="background-color: var(--body-yellow);
+          height: 5px;"></span>
+      </div>
     </div>
     <!-- same text as about text -->
     <div class="text" style="--order:1">
@@ -52,7 +64,11 @@
     </div>
     <div class="text" style="--order:3">
       <h2>LinkedIn</h2>
-      <a href="https://www.linkedin.com/in/yifan-chen-680655203/">https://www.linkedin.com/in/yifan-chen-680655203/</a>
+      <a style="
+      max-width: 20rem;
+      padding: 0.5rem 1rem;
+      margin-left: auto;
+      margin-right: auto;" href="https://www.linkedin.com/in/yifan-chen-680655203/">https://www.linkedin.com/in/yifan-chen-680655203/</a>
     </div>
     <!-- contact vector draw -->
     <img src="./img/Contact.svg" alt="contact" id="contact-draw">
@@ -69,6 +85,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
+
+<script src="./script.js"></script>
 </body>
 
 </html>

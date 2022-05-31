@@ -152,8 +152,14 @@ a:hover {
 
 main div {
     margin-bottom: 2rem;
-    padding-left: 10%;
-    padding-right: 10%;
+}
+/* link in index */
+.web-link{
+    margin-top: 1rem;
+    max-width: 4rem;
+    padding: 0.5rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Top bar settings */
@@ -171,7 +177,58 @@ main div {
     font-size: 24px;
 }
 
+/* scrolling bar */
+/* container of Loading bar */
+#topbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--body-copy-color);
+    position: sticky;
+    top: 0px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* when finish 25% */
+.p25 {
+    height: 5px;
+    background-color: var(--body-yellow);
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* when finish 50% */
+.p50 {
+    height: 5px;
+    background-color: var(--body-yellow);
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* when finish 75% */
+.p75 {
+    height: 5px;
+    background-color: var(--body-yellow);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* when finish 100% */
+.p100 {
+    height: 5px;
+    background-color: var(--body-yellow);
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
 /* portfolio page phone */
+.portfolio-content{
+    margin-left: auto;
+    margin-right: auto;
+}
 /* text settings, i use all same class: .portfolio-content on them */
 .portfolio-content div {
     padding: 0;
@@ -213,7 +270,10 @@ main div {
     position: relative;
     top: 1px;
 }
-
+#contactTopBar{
+    background-color: var(--body-yellow);
+    height: 5px;
+}
 
 /* laptop display */
 @media screen and (min-width: 800px) {
@@ -234,6 +294,9 @@ main div {
     }
 
     /* portfolio laptop */
+    .portfolio-content{
+        width: 600px;
+    }
     .portfolio-content img {
         float: left;
         max-width: 300px;
